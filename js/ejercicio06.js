@@ -50,13 +50,11 @@ let addItemButton = "";
  function crearbotones(e) {
   // Realiza las acciones de los botones subir, borrar y bajar para los elementos de la lista
   if(e.target.className=="subir"){
-    alert("sube sube");
     if(e.target.parentElement.previousElementSibling!==null){
       e.target.parentElement.after(e.target.parentElement.previousElementSibling)
     }
   }
   if(e.target.className=="bajar"){
-    alert("baja baja");
     if(e.target.parentElement.nextElementSibling!==null){
       e.target.parentElement.before(e.target.parentElement.nextElementSibling)
     }
