@@ -6,6 +6,7 @@ document.getElementById("b3").addEventListener("click", borrarPrimero);
 function añadirElemento() {
     let texto = document.getElementById("AñadirElemento").value;
     lista.innerHTML += "<li>" + texto;
+    document.getElementById("AñadirElemento").value="";
 }
 
 function borrarUltimo() {

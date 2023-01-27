@@ -86,6 +86,7 @@ let addItemButton = "";
   listUl.innerHTML += "<li>" + addItemInput.value;
   let num = listDiv.querySelector('ul').children.length;
   attachListItemButtons(lis[num-1]);
+  document.getElementsByClassName("addItemInput")[0].value="";
  }
 
 
